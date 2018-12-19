@@ -11,7 +11,7 @@ Selamat datang di documentation dari permainan game ular yang telah saya buat
 ```
 
 ## Penggunaan Script
-Karena permainan ini dibuat menggunakan javascript, berikut ini adalah penjelasan dari penggunaan script
+Karena permainan ini dibuat menggunakan javascript, berikut ini adalah penjelasan dari script yang digunakan
 
 ### Menampilkan Nama
 > pada bagian ini saya menggunakan prompt untuk mengambil nilai nama
@@ -34,3 +34,17 @@ nama.innerHTML = txt
 var canvas = document.getElementById("board");
 var context = canvas.getContext("2d");
 ```
+
+### Mengambil Ukuran Layar
+> Untuk mengambil lebar dan tinggi layar menggunakan script `window.innerWidth` dan `window.innerHeight`. Kemudian memberi warna pada layar canvas `context.fillStyle`
+```
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+var clear = function() {
+    context.fillStyle = "#2c3e50";
+    context.fillRect(0, 0, canvas.width, canvas.height); 
+};
+```
+
+### 
+
