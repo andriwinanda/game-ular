@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Permainan Ular</title>
+    <style>
+        body { 
+            margin: 0; 
+            background: #2c3e50; 
+            overflow: hidden; 
+            width: 100%;
+            font-family: 'Arial';
+        }
+        canvas { 
+            background: #FFF; 
+        }
+        .header{
+            display: block;
+            background-color: rgba(255, 255, 255, 0.863);
+            margin: 0;
+            padding: 15px 50px;
+            font-size: 17pt;
+        }
+        .score {
+            float: right;
+            display: inline block;
+            font-size: 17pt;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <span>Hello <b id="nama"> </b></span>
+        <span class="score">Score <b id="jlh-score">0</b></span>
+    </div>
+
+    <canvas id="board"></canvas>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
